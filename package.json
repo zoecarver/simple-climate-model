@@ -1,0 +1,23 @@
+{
+  "name": "climate-model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-slider": "^9.9.0",
+    "chart.js": "^2.7.0",
+    "mathjs": "^3.16.4"
+  },
+  "devDependencies": {
+    "install": "^0.10.1",
+    "npm": "^5.5.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.2"
+  }
+}
