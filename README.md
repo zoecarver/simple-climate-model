@@ -10,7 +10,7 @@ To run this project, download it and change directories into it. Then install th
 ## Formula
 The formula I am using is
 
-![formula](./images/formula.png)
+![formula](./images/fromula.png)
 
 The variables I used are:
 - `A = 0.3` - `A` is an arbitrary value.
