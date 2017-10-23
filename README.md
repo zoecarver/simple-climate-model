@@ -50,8 +50,8 @@ When I checked this against the provided data it gave me the "correct" output so
 </code></pre>
 
 2. The equation for incoming and outgoing radiation from the atmospheric layer is:
-<pre><code>σεT<sub>s</sub><sup>4</sup>=
-2σεT<sub>e</sub><sup>4</sup>
+<pre><code>σ⋅ε⋅T<sub>s</sub><sup>4</sup>=
+2⋅σ⋅ε⋅T<sub>e</sub><sup>4</sup>
 </code></pre>
 
 3. The equation for incoming and outgoing radiation at the surface is:
