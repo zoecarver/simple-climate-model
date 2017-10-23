@@ -44,23 +44,29 @@ When I checked this against the provided data it gave me the "correct" output so
 
 ## Steps needed to get to this equation
 1. This equation for incoming and outgoing radiation at the top of the atmosphere is:
-
+<pre><code>
 S(1 - A)/4 =
 σεT<sub>e</sub><sup>4</sup> +
 (1 - ε)σT<sub>s</sub><sup>4</sup>
+</code></pre>
 
 2. The equation for incoming and outgoing radiation from the atmospheric layer is:
-
+<pre><code>
 σεT<sub>s</sub><sup>4</sup>=
 2σεT<sub>e</sub><sup>4</sup>
+</code></pre>
 
 3. The equation for incoming and outgoing radiation at the surface is:
-
+<pre><code>
 S(1−A)4 +
 σεT<sub>e</sub><sup>4</sup> =
 σT<sub>s</sub><sup>4</sup>
+</code></pre>
 
 4. After solving the system of equations for T<sub>s</sub> and T<sub>e</sub> and then simplifying we get the above formula that is used to calculate the temperature of earth.
+
+
+**NOTE** due to formatting issues, please treat T<sub>x</sub><sup>4</sup> as the variable `T` sub `x` to the power of `4`.
 
 ## Credit
 
