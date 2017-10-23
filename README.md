@@ -13,15 +13,18 @@ The formula I am using is
 ![formula](./images/fromula.png)
 
 The variables I used are:
-- `A = 0.3` - `A` is an arbitrary value.
-  >This is a crude way of taking into account the fact that the Earth does not behave as a black body because the atmosphere has non-zero emissivity due to the presence of atmospheric greenhouse gases.
+- `A = 0.3` - I am not quite sure why `A` is `0.3`, but I think it has something to do with the atmosphere.
 
 - `σ = 5.67 x 10^−8`
   > σ is known as the Stefan-Boltzmann constant, and has the value σ=5.67 x 10−8(Wm−2K −4)σ=5.67 x 10−8(Wm−2K −4);
 
-- `S = 1370` - `S` is our solar constant and it is currently `1370`. Over a long period of time this may change, but for this model we can assume that it will stay at `1370`.
+- `S = 1370` - `S` is our solar constant and it is currently `1370`. A solar constant is the amount of radiation given off by the sun. Over a long period of time this may change, but for this model we can assume that it will stay at `1370`. `S` is expressed in `W / m2` or Watt per square meter.
 
-- `ε` is our input. If `ε` is `0` that is the equivalent of no greenhouse effect. In our current atmosphere we have greenhouse effect of about `0.77` which on our graph corresponds to ~15° Celsius and that is correct!
+- `ε` is the input. It is the atmospheric emissivity, or more simply current greenhouse effect.
+  >a measure of the efficiency of the atmosphere's absorption of any infrared radiation (IR) incident upon it
+
+  - If `ε` is `0` that is the equivalent of no greenhouse effect.
+  - In our current atmosphere we have greenhouse effect of about `0.77`.
 
 I then broke up the equation into two parts, the top and the bottom:
 
@@ -39,6 +42,26 @@ final = (top/bottom)^.25
 
 When I checked this against the provided data it gave me the "correct" output so I will assume that the equation worked.
 
+## Steps needed to get to this equation
+1. This equation for incoming and outgoing radiation at the top of the atmosphere is:
+
+S(1 - A)/4 =
+σεT<sub>e</sub><sup>4</sup> +
+(1 - ε)σT<sub>s</sub><sup>4</sup>
+
+2. The equation for incoming and outgoing radiation from the atmospheric layer is:
+
+σεT<sub>s</sub><sup>4</sup>=
+2σεT<sub>e</sub><sup>4</sup>
+
+3. The equation for incoming and outgoing radiation at the surface is:
+
+S(1−A)4 +
+σεT<sub>e</sub><sup>4</sup> =
+σT<sub>s</sub><sup>4</sup>
+
+4. After solving the system of equations for T<sub>s</sub> and T<sub>e</sub> and then simplifying we get the above formula that is used to calculate the temperature of earth.
+
 ## Credit
 
-https://www.e-education.psu.edu/meteo469/node/198
+[this](https://www.e-education.psu.edu/meteo469/node/198) amazing website is where almost all the content on this page came from.
