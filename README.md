@@ -13,7 +13,7 @@ The formula I am using is
 ![formula](./images/fromula.png)
 
 The variables I used are:
-- `A = 0.3` - I am not quite sure why `A` is `0.3`, but I think it has something to do with the atmosphere.
+- `A = 0.3` - `A` is albedo. It is `0.3`, this means that 30% of the short wave radiation that hits the earth is bounced back into space. 
 
 - `σ = 5.67 x 10^−8`
   > σ is known as the Stefan-Boltzmann constant, and has the value σ=5.67 x 10−8(Wm−2K −4)σ=5.67 x 10−8(Wm−2K −4);
